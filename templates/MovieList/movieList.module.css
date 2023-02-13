@@ -1,0 +1,36 @@
+.container {
+  display: grid;
+  grid-template-columns: repeat(6, 260px);
+  gap: 24px;
+}
+@media only screen and (max-width: 480px) {
+  .container {
+    grid-template-columns: 1fr;
+  }
+}
+
+.card {
+  border-radius: 0.5rem;
+  background-color: #fff;
+  -webkit-box-shadow: 4px 10px 5px -4px rgba(0, 0, 0, 0.63);
+  -moz-box-shadow: 4px 10px 5px -4px rgba(0, 0, 0, 0.63);
+  box-shadow: 4px 10px 5px -4px rgba(0, 0, 0, 0.63);
+  overflow-x: hidden;
+}
+
+.card img {
+  background-size: contain;
+  height: 40vh;
+  min-height: 480px;
+  width: 100%;
+  object-fit: cover;
+}
+
+.card .description {
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+  font-weight: 600;
+  font-family: var(--font-mono);
+  height: 64px;
+}

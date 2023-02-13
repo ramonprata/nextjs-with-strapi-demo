@@ -1,0 +1,21 @@
+.container {
+  display: grid;
+  grid-template-columns: auto minmax(50vw, 600px);
+  background-color: #fff;
+  border-radius: 0.5rem;
+  background-color: #fff;
+  -webkit-box-shadow: 4px 10px 5px -4px rgba(0, 0, 0, 0.63);
+  -moz-box-shadow: 4px 10px 5px -4px rgba(0, 0, 0, 0.63);
+  box-shadow: 4px 10px 5px -4px rgba(0, 0, 0, 0.63);
+  overflow-x: hidden;
+}
+
+.container img {
+  height: calc(100vh - 64px);
+  width: 100%;
+  object-fit: cover;
+}
+
+.container .description {
+  padding: 24px;
+}
